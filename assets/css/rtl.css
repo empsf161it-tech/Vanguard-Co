@@ -1,0 +1,50 @@
+/* ==========================================================================
+   VANGUARD & PARTNERS - RTL (RIGHT-TO-LEFT) SPECIFIC OVERRIDES
+   ========================================================================== */
+
+[dir="rtl"], body.rtl {
+  direction: rtl;
+  text-align: right;
+}
+
+/* Heading & Subtext Center Alignment Retained in RTL */
+[dir="rtl"] h1, [dir="rtl"] h2, [dir="rtl"] h3, [dir="rtl"] h4,
+[dir="rtl"] .subtext, [dir="rtl"] .section-subtext {
+  text-align: center;
+}
+
+/* Card Centering Retained in RTL */
+[dir="rtl"] .card {
+  text-align: center;
+  align-items: center;
+}
+
+[dir="rtl"] .form-group {
+  text-align: right;
+}
+
+/* Drawer Slides from LEFT in RTL Mode */
+[dir="rtl"] .nav-drawer {
+  inset-inline-end: auto;
+  inset-inline-start: -100%;
+  box-shadow: 10px 0 30px rgba(0, 0, 0, 0.3);
+  transition: inset-inline-start 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+[dir="rtl"] .nav-drawer.active {
+  inset-inline-start: 0;
+  inset-inline-end: auto;
+}
+
+[dir="rtl"] .footer-col {
+  align-items: flex-start;
+}
+
+[dir="rtl"] .footer-col h4 {
+  text-align: right;
+}
+
+[dir="rtl"] .footer-links a:hover {
+  padding-inline-start: 0;
+  padding-inline-end: 5px;
+}

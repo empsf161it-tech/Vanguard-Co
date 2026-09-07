@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Counsel | Vanguard & Partners Legal Counsel</title>
+  <meta name="description" content="Initiate confidential legal consultations, retain senior litigation partners, or contact our global offices in New York, London, and Geneva.">
+
+  <!-- Remix Icon CDN -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css">
+
+  <!-- Core Stylesheets -->
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/rtl.css">
+</head>
+<body>
+
+  <!-- ================= HEADER / NAVBAR ================= -->
+  <header class="navbar-header">
+    <div class="container navbar-container">
+      <a href="index.html" class="brand-logo">
+        <i class="ri-scales-3-line"></i>
+        <span>Vanguard & Co</span>
+      </a>
+
+      <nav class="nav-links desktop-only">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="home2.html" class="nav-link">Home 2</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="services.html" class="nav-link">Services</a>
+        <a href="pricing.html" class="nav-link">Pricing</a>
+        <a href="blog.html" class="nav-link">Blog</a>
+        <a href="contact.html" class="nav-link active">Contact</a>
+        <a href="dashboard.html" class="nav-link">Dashboard</a>
+      </nav>
+
+      <div class="nav-actions">
+        <button class="icon-btn theme-toggle-btn desktop-only" aria-label="Toggle Theme">
+          <i class="ri-moon-line"></i>
+        </button>
+
+        <button class="icon-btn rtl-toggle-btn" aria-label="Toggle Language Direction">
+          <i class="ri-arrow-left-right-line"></i>
+        </button>
+
+        <a href="login.html" class="btn btn-outline desktop-only">Login</a>
+
+        <button class="hamburger-toggle" aria-label="Open Menu">
+          <i class="ri-menu-3-line"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ================= MOBILE SLIDE-DRAWER ================= -->
+  <div class="drawer-overlay"></div>
+  <aside class="nav-drawer" aria-label="Mobile Navigation">
+    <div class="drawer-header">
+      <a href="index.html" class="brand-logo">
+        <i class="ri-scales-3-line"></i>
+        <span>Vanguard</span>
+      </a>
+      <button class="drawer-close-btn" aria-label="Close Menu">
+        <i class="ri-close-line"></i>
+      </button>
+    </div>
+
+    <div class="drawer-nav-links">
+      <a href="index.html" class="drawer-nav-link">Home</a>
+      <a href="home2.html" class="drawer-nav-link">Home 2</a>
+      <a href="about.html" class="drawer-nav-link">About Us</a>
+      <a href="services.html" class="drawer-nav-link">Practice Areas</a>
+      <a href="pricing.html" class="drawer-nav-link">Retainers & Pricing</a>
+      <a href="blog.html" class="drawer-nav-link">Legal Briefings</a>
+      <a href="contact.html" class="drawer-nav-link">Contact Counsel</a>
+      <a href="dashboard.html" class="drawer-nav-link">Client Portal</a>
+    </div>
+
+    <div class="drawer-actions">
+      <button class="btn btn-outline theme-toggle-btn" style="width:100%">
+        <i class="ri-moon-line"></i> Toggle Appearance
+      </button>
+      <a href="login.html" class="btn btn-primary" style="width:100%">Login</a>
+    </div>
+  </aside>
+
+  <!-- ================= MAIN CONTENT ================= -->
+  <main>
+
+    <!-- SECTION 1: CONFIDENTIAL CONSULTATION FORM (FULL SCREEN 100vh / 150vh) -->
+    <section class="full-section" style="padding-block-start: calc(var(--header-height) + 2rem);">
+      <div class="container" style="display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items: flex-start;">
+        <div style="text-align: start;">
+          <span style="color: var(--secondary); font-size: 0.9rem; text-transform: uppercase; letter-spacing: 0.15em; font-weight: 600;">Confidential Intake</span>
+          <h1 style="text-align: start; margin-block: 0.8rem 1.5rem;">Schedule an Executive Consultation</h1>
+          <p style="margin-block-end: 2rem;">All communications submitted through this encrypted portal are protected under strict Attorney-Client Privilege safeguards.</p>
+
+          <div style="display: flex; flex-direction: column; gap: 1.5rem;">
+            <div style="display: flex; gap: 1rem; align-items: center;">
+              <i class="ri-map-pin-line" style="font-size: 1.8rem; color: var(--secondary);"></i>
+              <div>
+                <strong>Global Headquarters</strong>
+                <p style="font-size: 0.9rem;">740 Park Avenue, 18th Floor, New York, NY 10021</p>
+              </div>
+            </div>
+
+            <div style="display: flex; gap: 1rem; align-items: center;">
+              <i class="ri-phone-line" style="font-size: 1.8rem; color: var(--secondary);"></i>
+              <div>
+                <strong>Direct Litigation Phone</strong>
+                <p style="font-size: 0.9rem;">+1 (212) 555-8900</p>
+              </div>
+            </div>
+
+            <div style="display: flex; gap: 1rem; align-items: center;">
+              <i class="ri-mail-line" style="font-size: 1.8rem; color: var(--secondary);"></i>
+              <div>
+                <strong>Encrypted Communications</strong>
+                <p style="font-size: 0.9rem;">counsel@vanguardlaw.com</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Intake Form Container -->
+        <div style="background-color: var(--surface); padding: 3rem 2.5rem; border-radius: var(--radius-global); border: 1px solid var(--border-color); box-shadow: var(--shadow-subtle);">
+          <h3 style="margin-block-end: 1.5rem;">Encrypted Case Evaluation Form</h3>
+          <form data-validate="true">
+            <div class="form-group">
+              <label class="form-label" for="contactName">Full Name / Organization *</label>
+              <input type="text" id="contactName" class="form-control" placeholder="Jane Sterling" required>
+              <span class="error-message">Name is required.</span>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="contactEmail">Corporate Email Address *</label>
+              <input type="email" id="contactEmail" class="form-control" placeholder="jsterling@enterprise.com" required>
+              <span class="error-message">A valid email address is required.</span>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="contactPractice">Practice Area Required *</label>
+              <select id="contactPractice" class="form-control" required>
+                <option value="">Select Primary Practice Area</option>
+                <option value="ma">Corporate M&A & Governance</option>
+                <option value="litigation">Commercial Litigation & Defense</option>
+                <option value="ip">IP & Patent Infringement</option>
+                <option value="wealth">Private Wealth & Asset Preservation</option>
+                <option value="arbitration">International Arbitration</option>
+              </select>
+              <span class="error-message">Please select a practice area.</span>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="contactMessage">Brief Matter Description *</label>
+              <textarea id="contactMessage" class="form-control" rows="4" placeholder="Describe the dispute or corporate advisory requirements..." required></textarea>
+              <span class="error-message">Matter description is required.</span>
+            </div>
+
+            <button type="submit" class="btn btn-primary" style="width: 100%;">Submit Case Briefing</button>
+            <div class="form-success-alert">Your case briefing has been securely transmitted. Senior counsel will respond within 2 hours.</div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 2: MAP PLACEHOLDER & GLOBAL OFFICES -->
+    <section class="full-section section-bg-alt gsap-reveal">
+      <div class="container">
+        <h2>Global Office Locations</h2>
+        <p class="section-subtext">Direct physical presence in New York, London, Geneva, Dubai, and Singapore.</p>
+
+        <!-- Luxury Map Placeholder Wrapper -->
+        <div style="width: 100%; height: 380px; background: linear-gradient(135deg, #0b1320, #142034); border-radius: var(--radius-global); border: 1px solid var(--border-color); display: flex; flex-direction: column; align-items: center; justify-content: center; color: #fff; text-align: center; position: relative; overflow: hidden; margin-block-end: 3rem;">
+          <i class="ri-earth-line" style="font-size: 5rem; color: var(--secondary); margin-block-end: 1rem; opacity: 0.8;"></i>
+          <h3 style="color: #fff; margin-block-end: 0.5rem;">Interactive Global Office Network</h3>
+          <p style="color: #94a3b8; max-width: 500px;">740 Park Avenue (NYC) • 1 Chancery Lane (LDN) • Rue du Rhône 42 (GVA)</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 3: DIRECT ATTORNEY CHANNELS -->
+    <section class="full-section gsap-reveal">
+      <div class="container">
+        <h2>Direct Practice Hotlines</h2>
+        <p class="section-subtext">Contact lead partners directly during market hours.</p>
+
+        <div class="card-grid">
+          <div class="card">
+            <div class="card-icon"><i class="ri-phone-find-line"></i></div>
+            <h3 class="card-title">Commercial Litigation Desk</h3>
+            <p class="card-desc">Direct line for trial injunctions and court deadlines.</p>
+            <strong style="color: var(--secondary); font-size: 1.1rem;">+1 (212) 555-8901</strong>
+          </div>
+
+          <div class="card">
+            <div class="card-icon"><i class="ri-exchange-dollar-line"></i></div>
+            <h3 class="card-title">M&A & Regulatory Desk</h3>
+            <p class="card-desc">CFIUS filings, antitrust clearance, and tender offers.</p>
+            <strong style="color: var(--secondary); font-size: 1.1rem;">+44 (0) 20 7946 0914</strong>
+          </div>
+
+          <div class="card">
+            <div class="card-icon"><i class="ri-shield-user-line"></i></div>
+            <h3 class="card-title">Private Client Desk</h3>
+            <p class="card-desc">Offshore trust protection and family office advisors.</p>
+            <strong style="color: var(--secondary); font-size: 1.1rem;">+41 22 819 9005</strong>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 4: 24/7 EMERGENCY LITIGATION DESK -->
+    <section class="full-section" style="background-color: var(--primary); color: #fff;">
+      <div class="container" style="text-align: center;">
+        <h2 style="color: #fff;">Emergency Injunction & Trial Response</h2>
+        <p class="subtext" style="color: #94a3b8;">For immediate asset freezing orders, search warrants, or weekend trial motions.</p>
+        <div style="display: inline-block; padding: 1.5rem 3rem; border: 1px solid var(--secondary); border-radius: var(--radius-global); margin-block-end: 2rem;">
+          <span style="display: block; font-size: 0.85rem; color: var(--secondary); text-transform: uppercase; letter-spacing: 0.15em;">24/7 Emergency Hotline</span>
+          <strong style="font-size: 2.2rem; font-family: var(--font-heading); color: #fff;">+1 (800) 555-VANGUARD</strong>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 5: INTAKE FAQ -->
+    <section class="full-section section-bg-alt gsap-reveal">
+      <div class="container" style="max-width: 800px;">
+        <h2>Pre-Engagement Intake FAQ</h2>
+        <p class="section-subtext">What to expect during your initial consultation with senior counsel.</p>
+
+        <div style="display: flex; flex-direction: column; gap: 1.5rem; text-align: start;">
+          <div style="background: var(--surface); padding: 1.5rem 2rem; border-radius: var(--radius-global); border: 1px solid var(--border-color);">
+            <h4 style="color: var(--secondary); margin-block-end: 0.5rem; text-align: start;">Is the initial consultation covered under Attorney-Client Privilege?</h4>
+            <p style="font-size: 0.95rem;">Yes, under applicable professional conduct rules, all preliminary communications remain strictly confidential regardless of whether an engagement agreement is subsequently executed.</p>
+          </div>
+
+          <div style="background: var(--surface); padding: 1.5rem 2rem; border-radius: var(--radius-global); border: 1px solid var(--border-color);">
+            <h4 style="color: var(--secondary); margin-block-end: 0.5rem; text-align: start;">How quickly can conflict checks be cleared?</h4>
+            <p style="font-size: 0.95rem;">Our automated compliance software performs worldwide conflict checks across all office jurisdictions within 45 minutes of intake submission.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <a href="index.html" class="brand-logo" style="color: #fff; margin-block-end: 1rem;">
+            <i class="ri-scales-3-line"></i>
+            <span>Vanguard</span>
+          </a>
+          <p style="color: #94a3b8; font-size: 0.9rem;">Confidential counsel intake and trial advocacy.</p>
+        </div>
+
+        <div class="footer-col">
+          <h4>Navigation</h4>
+          <div class="footer-links">
+            <a href="index.html">Home</a>
+            <a href="home2.html">Home 2</a>
+            <a href="about.html">About Us</a>
+            <a href="services.html">Services</a>
+            <a href="pricing.html">Pricing</a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4>Resources</h4>
+          <div class="footer-links">
+            <a href="blog.html">Legal Briefings</a>
+            <a href="contact.html">Contact Us</a>
+            <a href="dashboard.html">Client Portal</a>
+            <a href="login.html">Client Login</a>
+            <a href="register.html">Register</a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4>New York Office</h4>
+          <p style="color: #94a3b8; font-size: 0.9rem; margin-block-end: 0.5rem;">740 Park Avenue</p>
+          <p style="color: #94a3b8; font-size: 0.9rem; margin-block-end: 0.5rem;">New York, NY 10021</p>
+          <p style="color: var(--secondary); font-size: 0.9rem;"><i class="ri-phone-line"></i> +1 (212) 555-8900</p>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 Vanguard & Partners Legal Counsel LLC. All Rights Reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

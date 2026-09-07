@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Global Arbitration Portal | Launching Soon</title>
+
+  <!-- Remix Icon CDN -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css">
+
+  <!-- Core Stylesheets -->
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/rtl.css">
+</head>
+<body>
+
+  <!-- ================= HEADER / NAVBAR ================= -->
+  <header class="navbar-header">
+    <div class="container navbar-container">
+      <a href="index.html" class="brand-logo">
+        <i class="ri-scales-3-line"></i>
+        <span>Vanguard & Co</span>
+      </a>
+
+      <nav class="nav-links desktop-only">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="home2.html" class="nav-link">Home 2</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="services.html" class="nav-link">Services</a>
+        <a href="pricing.html" class="nav-link">Pricing</a>
+        <a href="blog.html" class="nav-link">Blog</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+        <a href="dashboard.html" class="nav-link">Dashboard</a>
+      </nav>
+
+      <div class="nav-actions">
+        <button class="icon-btn theme-toggle-btn desktop-only" aria-label="Toggle Theme">
+          <i class="ri-moon-line"></i>
+        </button>
+
+        <button class="icon-btn rtl-toggle-btn" aria-label="Toggle Language Direction">
+          <i class="ri-arrow-left-right-line"></i>
+        </button>
+
+        <a href="login.html" class="btn btn-outline desktop-only">Login</a>
+
+        <button class="hamburger-toggle" aria-label="Open Menu">
+          <i class="ri-menu-3-line"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ================= MOBILE SLIDE-DRAWER ================= -->
+  <div class="drawer-overlay"></div>
+  <aside class="nav-drawer" aria-label="Mobile Navigation">
+    <div class="drawer-header">
+      <a href="index.html" class="brand-logo">
+        <i class="ri-scales-3-line"></i>
+        <span>Vanguard</span>
+      </a>
+      <button class="drawer-close-btn" aria-label="Close Menu">
+        <i class="ri-close-line"></i>
+      </button>
+    </div>
+
+    <div class="drawer-nav-links">
+      <a href="index.html" class="drawer-nav-link">Home</a>
+      <a href="home2.html" class="drawer-nav-link">Home 2</a>
+      <a href="about.html" class="drawer-nav-link">About Us</a>
+      <a href="services.html" class="drawer-nav-link">Practice Areas</a>
+      <a href="pricing.html" class="drawer-nav-link">Retainers & Pricing</a>
+      <a href="blog.html" class="drawer-nav-link">Legal Briefings</a>
+      <a href="contact.html" class="drawer-nav-link">Contact Counsel</a>
+      <a href="dashboard.html" class="drawer-nav-link">Client Portal</a>
+    </div>
+
+    <div class="drawer-actions">
+      <button class="btn btn-outline theme-toggle-btn" style="width:100%">
+        <i class="ri-moon-line"></i> Toggle Appearance
+      </button>
+      <a href="login.html" class="btn btn-primary" style="width:100%">Login</a>
+    </div>
+  </aside>
+
+  <!-- ================= COMING SOON CONTENT ================= -->
+  <main class="full-section" style="padding-block-start: calc(var(--header-height) + 3rem);">
+    <div class="container" style="text-align: center; max-width: 800px;">
+      <span style="color: var(--secondary); font-size: 0.9rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.2em;">Next-Gen Legal Architecture</span>
+      <h1 style="margin-block: 1rem 1.5rem;">Cross-Border Arbitration Portal <span class="gold-accent">Launching Q4 2026.</span></h1>
+      <p class="subtext">We are deploying our encrypted 256-bit automated discovery and international tribunal portal for client enterprise retainers.</p>
+
+      <!-- COUNTDOWN TIMER CONTAINER -->
+      <div style="display: flex; gap: 2rem; justify-content: center; margin-block: 3rem 4rem; flex-wrap: wrap;">
+        <div style="background: var(--surface); padding: 1.5rem 2rem; border-radius: var(--radius-global); border: 1px solid var(--border-color); min-width: 110px;">
+          <h2 id="daysNum" style="color: var(--secondary); font-size: 3rem; margin: 0;">48</h2>
+          <span style="font-size: 0.8rem; text-transform: uppercase; color: var(--text-muted);">Days</span>
+        </div>
+        <div style="background: var(--surface); padding: 1.5rem 2rem; border-radius: var(--radius-global); border: 1px solid var(--border-color); min-width: 110px;">
+          <h2 id="hoursNum" style="color: var(--secondary); font-size: 3rem; margin: 0;">14</h2>
+          <span style="font-size: 0.8rem; text-transform: uppercase; color: var(--text-muted);">Hours</span>
+        </div>
+        <div style="background: var(--surface); padding: 1.5rem 2rem; border-radius: var(--radius-global); border: 1px solid var(--border-color); min-width: 110px;">
+          <h2 id="minsNum" style="color: var(--secondary); font-size: 3rem; margin: 0;">32</h2>
+          <span style="font-size: 0.8rem; text-transform: uppercase; color: var(--text-muted);">Minutes</span>
+        </div>
+        <div style="background: var(--surface); padding: 1.5rem 2rem; border-radius: var(--radius-global); border: 1px solid var(--border-color); min-width: 110px;">
+          <h2 id="secsNum" style="color: var(--secondary); font-size: 3rem; margin: 0;">18</h2>
+          <span style="font-size: 0.8rem; text-transform: uppercase; color: var(--text-muted);">Seconds</span>
+        </div>
+      </div>
+
+      <!-- PRE-LAUNCH EMAIL CAPTURE -->
+      <div style="max-width: 600px; margin-inline: auto;">
+        <form data-validate="true">
+          <div class="form-group">
+            <input type="email" class="form-control" placeholder="Enter corporate email for early access" required>
+            <span class="error-message">Please enter a valid corporate email.</span>
+          </div>
+          <button type="submit" class="btn btn-primary" style="width: 100%;">Request Priority Pre-Launch Access</button>
+          <div class="form-success-alert">You are registered for priority portal invitations.</div>
+        </form>
+      </div>
+    </div>
+  </main>
+
+  <script src="assets/js/main.js"></script>
+  <script>
+    // Live Countdown Timer Simulation
+    let seconds = 18;
+    setInterval(() => {
+      seconds--;
+      if (seconds < 0) seconds = 59;
+      document.getElementById('secsNum').textContent = seconds < 10 ? '0' + seconds : seconds;
+    }, 1000);
+  </script>
+</body>
+</html>

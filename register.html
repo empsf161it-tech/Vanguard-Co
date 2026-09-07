@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Register Portal Account | Vanguard & Partners</title>
+  <meta name="description" content="Register a confidential client portal account with Vanguard & Partners.">
+
+  <!-- Remix Icon CDN -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css">
+
+  <!-- Core Stylesheets -->
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/rtl.css">
+</head>
+<body>
+
+  <!-- ================= AUTH CENTERED WRAPPER (NO HEADER / NO THEME TOGGLE) ================= -->
+  <div class="auth-page-wrapper">
+    <div class="auth-card" style="max-width: 480px;">
+      <a href="index.html" class="brand-logo" style="justify-content: center; margin-block-end: 1.25rem;">
+        <i class="ri-scales-3-line"></i>
+        <span>Vanguard</span>
+      </a>
+
+      <h2 style="font-size: 1.8rem; margin-block-end: 0.5rem;">Register Portal Account</h2>
+      <p style="font-size: 0.9rem; color: var(--text-muted); margin-block-end: 1.5rem;">Establish encrypted access for corporate representation.</p>
+
+      <form data-validate="true">
+        <div class="form-group">
+          <label class="form-label" for="regName">Full Legal Name</label>
+          <input type="text" id="regName" class="form-control" placeholder="Alexander Sterling" required>
+          <span class="error-message">Name is required.</span>
+        </div>
+
+        <div class="form-group">
+          <label class="form-label" for="regEmail">Corporate Email Address</label>
+          <input type="email" id="regEmail" class="form-control" placeholder="asterling@enterprise.com" required>
+          <span class="error-message">Please enter a valid corporate email.</span>
+        </div>
+
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 0.75rem;">
+          <div class="form-group">
+            <label class="form-label" for="password">Password</label>
+            <input type="password" id="password" class="form-control" placeholder="••••••••" required>
+            <span class="error-message">Min 8 chars required.</span>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="confirmPassword">Confirm</label>
+            <input type="password" id="confirmPassword" class="form-control" placeholder="••••••••" required>
+            <span class="error-message">Passwords must match.</span>
+          </div>
+        </div>
+
+        <div class="form-group" style="flex-direction: row; align-items: center; gap: 0.5rem; margin-block-end: 1.25rem;">
+          <input type="checkbox" id="termsCheckbox" required style="accent-color: var(--secondary); cursor: pointer;">
+          <label for="termsCheckbox" style="font-size: 0.85rem; color: var(--text-muted); cursor: pointer;">
+            I accept the <a href="#" style="color: var(--secondary); text-decoration: underline;">Terms & Conditions</a> and Privacy Policy
+          </label>
+        </div>
+
+        <button type="submit" class="btn btn-primary" style="width: 100%;">Register Account</button>
+        <div class="form-success-alert">Account registered! Redirecting to Portal Dashboard...</div>
+      </form>
+
+      <div class="auth-divider">
+        <span>or register with</span>
+      </div>
+
+      <!-- Social Auth Buttons -->
+      <button class="social-auth-btn" type="button" onclick="window.location.href='dashboard.html'">
+        <i class="ri-google-fill" style="color: #ea4335;"></i> Continue with Google
+      </button>
+
+      <button class="social-auth-btn" type="button" onclick="window.location.href='dashboard.html'">
+        <i class="ri-apple-fill"></i> Continue with Apple
+      </button>
+
+      <p style="margin-block-start: 1.25rem; font-size: 0.9rem; color: var(--text-muted);">
+        Already have an account? <a href="login.html" style="color: var(--secondary); font-weight: 600;">Login Here</a>
+      </p>
+    </div>
+  </div>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
