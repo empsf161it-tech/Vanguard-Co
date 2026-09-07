@@ -6,6 +6,11 @@
   <title>Client Portal Login | Vanguard & Partners</title>
   <meta name="description" content="Secure Client & Counsel Portal Login for Vanguard & Partners Legal Counsel.">
 
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/images/apple-touch-icon.png">
+
   <!-- Remix Icon CDN -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css">
 
@@ -15,12 +20,22 @@
 </head>
 <body>
 
-  <!-- ================= AUTH CENTERED WRAPPER (NO HEADER / NO THEME TOGGLE) ================= -->
-  <div class="auth-page-wrapper">
+  <!-- Top Right Action Controls (Theme Toggle & RTL Switcher) -->
+  <div style="position: absolute; top: 1.5rem; inset-inline-end: 1.5rem; display: flex; gap: 0.75rem; z-index: 10;">
+    <button class="icon-btn theme-toggle-btn" aria-label="Toggle Theme">
+      <i class="ri-moon-line"></i>
+    </button>
+    <button class="icon-btn rtl-toggle-btn" aria-label="Toggle Language Direction">
+      <i class="ri-arrow-left-right-line"></i>
+    </button>
+  </div>
+
+  <!-- ================= AUTH CENTERED WRAPPER ================= -->
+  <div class="auth-page-wrapper" style="position: relative;">
     <div class="auth-card">
       <a href="index.html" class="brand-logo" style="justify-content: center; margin-block-end: 1.5rem;">
         <i class="ri-scales-3-line"></i>
-        <span>Vanguard</span>
+        <span>Vanguard & Co</span>
       </a>
 
       <h2 style="font-size: 1.8rem; margin-block-end: 0.5rem;">Client Portal Login</h2>
@@ -35,12 +50,25 @@
 
         <div class="form-group">
           <label class="form-label" for="password">Encrypted Password</label>
-          <input type="password" id="password" class="form-control" placeholder="••••••••" required>
+          <div class="password-input-wrapper">
+            <input type="password" id="password" class="form-control" placeholder="••••••••" required style="padding-inline-end: 2.75rem;">
+            <button type="button" class="password-toggle-btn" aria-label="Toggle password visibility">
+              <i class="ri-eye-off-line"></i>
+            </button>
+          </div>
           <span class="error-message">Password must be at least 8 characters.</span>
         </div>
 
-        <button type="submit" class="btn btn-primary" style="width: 100%; margin-block-start: 0.5rem;">Login</button>
-        <div class="form-success-alert">Credentials verified. Redirecting to Client Portal...</div>
+        <div style="display: flex; justify-content: space-between; align-items: center; margin-block-end: 1.5rem; font-size: 0.85rem;">
+          <label style="display: flex; align-items: center; gap: 0.5rem; color: var(--text-muted); cursor: pointer;">
+            <input type="checkbox" id="rememberMe" style="accent-color: var(--secondary); cursor: pointer;">
+            Remember Me
+          </label>
+          <a href="#" onclick="alert('A password reset dispatch link has been sent to your verified corporate email address.'); return false;" style="color: var(--secondary); font-weight: 600;">Forgot Password?</a>
+        </div>
+
+        <button type="submit" class="btn btn-primary" style="width: 100%;">Login</button>
+        <div class="form-success-alert">Credentials verified. Redirecting to Homepage...</div>
       </form>
 
       <div class="auth-divider">
@@ -48,11 +76,11 @@
       </div>
 
       <!-- Social Auth Buttons -->
-      <button class="social-auth-btn" type="button" onclick="window.location.href='dashboard.html'">
+      <button class="social-auth-btn" type="button" onclick="window.location.href='index.html'">
         <i class="ri-google-fill" style="color: #ea4335;"></i> Continue with Google
       </button>
 
-      <button class="social-auth-btn" type="button" onclick="window.location.href='dashboard.html'">
+      <button class="social-auth-btn" type="button" onclick="window.location.href='index.html'">
         <i class="ri-apple-fill"></i> Continue with Apple
       </button>
 

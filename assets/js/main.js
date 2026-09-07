@@ -11,6 +11,8 @@ document.addEventListener('DOMContentLoaded', () => {
   init3DCardTiltEffect();
   initMagneticButtons();
   initFAQAccordions();
+  initBackToTop();
+  initPasswordToggle();
 });
 
 /* --------------------------------------------------------------------------
@@ -290,3 +292,46 @@ function initFAQAccordions() {
     });
   });
 }
+
+/* --------------------------------------------------------------------------
+   9. Smooth Back to Top Scroll Engine
+   -------------------------------------------------------------------------- */
+function initBackToTop() {
+  const backToTopBtns = document.querySelectorAll('.back-to-top-btn, #backToTopBtn');
+  backToTopBtns.forEach(btn => {
+    btn.addEventListener('click', (e) => {
+      e.preventDefault();
+      window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+      });
+    });
+  });
+}
+
+/* --------------------------------------------------------------------------
+   10. Interactive Show/Hide Password Eye Toggle
+   -------------------------------------------------------------------------- */
+function initPasswordToggle() {
+  const toggleBtns = document.querySelectorAll('.password-toggle-btn');
+
+  toggleBtns.forEach(btn => {
+    btn.addEventListener('click', () => {
+      const wrapper = btn.closest('.password-input-wrapper');
+      if (!wrapper) return;
+      const input = wrapper.querySelector('input');
+      const icon = btn.querySelector('i');
+
+      if (!input || !icon) return;
+
+      if (input.type === 'password') {
+        input.type = 'text';
+        icon.className = 'ri-eye-line';
+      } else {
+        input.type = 'password';
+        icon.className = 'ri-eye-off-line';
+      }
+    });
+  });
+}
+

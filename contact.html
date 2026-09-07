@@ -6,6 +6,11 @@
   <title>Contact Counsel | Vanguard & Partners Legal Counsel</title>
   <meta name="description" content="Initiate confidential legal consultations, retain senior litigation partners, or contact our global offices in New York, London, and Geneva.">
 
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/images/apple-touch-icon.png">
+
   <!-- Remix Icon CDN -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css">
 
@@ -31,7 +36,6 @@
         <a href="pricing.html" class="nav-link">Pricing</a>
         <a href="blog.html" class="nav-link">Blog</a>
         <a href="contact.html" class="nav-link active">Contact</a>
-        <a href="dashboard.html" class="nav-link">Dashboard</a>
       </nav>
 
       <div class="nav-actions">
@@ -58,7 +62,7 @@
     <div class="drawer-header">
       <a href="index.html" class="brand-logo">
         <i class="ri-scales-3-line"></i>
-        <span>Vanguard</span>
+        <span>Vanguard & Co</span>
       </a>
       <button class="drawer-close-btn" aria-label="Close Menu">
         <i class="ri-close-line"></i>
@@ -68,12 +72,11 @@
     <div class="drawer-nav-links">
       <a href="index.html" class="drawer-nav-link">Home</a>
       <a href="home2.html" class="drawer-nav-link">Home 2</a>
-      <a href="about.html" class="drawer-nav-link">About Us</a>
-      <a href="services.html" class="drawer-nav-link">Practice Areas</a>
-      <a href="pricing.html" class="drawer-nav-link">Retainers & Pricing</a>
-      <a href="blog.html" class="drawer-nav-link">Legal Briefings</a>
-      <a href="contact.html" class="drawer-nav-link">Contact Counsel</a>
-      <a href="dashboard.html" class="drawer-nav-link">Client Portal</a>
+      <a href="about.html" class="drawer-nav-link">About</a>
+      <a href="services.html" class="drawer-nav-link">Services</a>
+      <a href="pricing.html" class="drawer-nav-link">Pricing</a>
+      <a href="blog.html" class="drawer-nav-link">Blog</a>
+      <a href="contact.html" class="drawer-nav-link active">Contact</a>
     </div>
 
     <div class="drawer-actions">
@@ -87,12 +90,31 @@
   <!-- ================= MAIN CONTENT ================= -->
   <main>
 
-    <!-- SECTION 1: CONFIDENTIAL CONSULTATION FORM (FULL SCREEN 100vh / 150vh) -->
-    <section class="full-section" style="padding-block-start: calc(var(--header-height) + 2rem);">
+    <!-- SECTION 1: CONTACT HERO -->
+    <section class="full-section hero-section" style="background: linear-gradient(180deg, rgba(7,13,25,0.88) 0%, rgba(7,13,25,0.96) 100%), url('https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=1920&q=80') center/cover no-repeat; color: #fff; padding-block-start: calc(var(--header-height) + 4rem); min-height: 75vh;">
+      <div class="container" style="text-align: center; max-width: 940px;">
+        <span class="hero-animate" style="color: var(--secondary); text-transform: uppercase; letter-spacing: 0.2em; font-size: 0.95rem; font-weight: 600; display: inline-block; margin-block-end: 1rem;">
+          <i class="ri-shield-keyhole-line" style="margin-inline-end: 0.4rem;"></i> Encrypted Executive Communication
+        </span>
+        <h1 class="hero-animate" style="color: #ffffff; margin-block-end: 1.5rem;">
+          Immediate Legal Advocacy. <br><span class="gold-accent">Securing Global Enterprise.</span>
+        </h1>
+        <p class="hero-animate subtext" style="color: #cbd5e1; margin-block-end: 2.5rem;">
+          Connect directly with lead partners in litigation, cross-border M&A, and private wealth. All preliminary inquiries are protected under strict Attorney-Client privilege.
+        </p>
+        <div class="hero-animate hero-buttons" style="display: flex; gap: 1.25rem; justify-content: center; flex-wrap: wrap;">
+          <a href="#intake-form" class="btn btn-primary">Schedule Consultation</a>
+          <a href="#global-offices" class="btn btn-outline" style="color: #fff; border-color: rgba(255,255,255,0.3);">View Global Offices</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 2: CONFIDENTIAL CONSULTATION FORM -->
+    <section id="intake-form" class="full-section gsap-reveal">
       <div class="container" style="display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items: flex-start;">
         <div style="text-align: start;">
           <span style="color: var(--secondary); font-size: 0.9rem; text-transform: uppercase; letter-spacing: 0.15em; font-weight: 600;">Confidential Intake</span>
-          <h1 style="text-align: start; margin-block: 0.8rem 1.5rem;">Schedule an Executive Consultation</h1>
+          <h2 style="text-align: start; margin-block: 0.8rem 1.5rem;">Schedule an Executive Consultation</h2>
           <p style="margin-block-end: 2rem;">All communications submitted through this encrypted portal are protected under strict Attorney-Client Privilege safeguards.</p>
 
           <div style="display: flex; flex-direction: column; gap: 1.5rem;">
@@ -164,23 +186,80 @@
       </div>
     </section>
 
-    <!-- SECTION 2: MAP PLACEHOLDER & GLOBAL OFFICES -->
-    <section class="full-section section-bg-alt gsap-reveal">
+    <!-- SECTION 3: MAP & GLOBAL OFFICES NETWORK -->
+    <section id="global-offices" class="full-section section-bg-alt gsap-reveal">
       <div class="container">
         <h2>Global Office Locations</h2>
-        <p class="section-subtext">Direct physical presence in New York, London, Geneva, Dubai, and Singapore.</p>
+        <p class="section-subtext">Direct physical presence across major legal and financial centers worldwide.</p>
 
-        <!-- Luxury Map Placeholder Wrapper -->
-        <div style="width: 100%; height: 380px; background: linear-gradient(135deg, #0b1320, #142034); border-radius: var(--radius-global); border: 1px solid var(--border-color); display: flex; flex-direction: column; align-items: center; justify-content: center; color: #fff; text-align: center; position: relative; overflow: hidden; margin-block-end: 3rem;">
-          <i class="ri-earth-line" style="font-size: 5rem; color: var(--secondary); margin-block-end: 1rem; opacity: 0.8;"></i>
-          <h3 style="color: #fff; margin-block-end: 0.5rem;">Interactive Global Office Network</h3>
-          <p style="color: #94a3b8; max-width: 500px;">740 Park Avenue (NYC) • 1 Chancery Lane (LDN) • Rue du Rhône 42 (GVA)</p>
+        <!-- Office Selection Navigation Tabs -->
+        <div class="office-tabs" style="display: flex; gap: 0.75rem; justify-content: center; flex-wrap: wrap; margin-block-end: 2rem;">
+          <button class="office-tab-btn active" onclick="switchOffice('nyc', this)" style="padding: 0.6rem 1.25rem; border-radius: 30px; font-size: 0.9rem; font-weight: 600; cursor: pointer; border: 1px solid var(--secondary); background: var(--secondary); color: #0b1320; transition: all 0.3s ease;">
+            <i class="ri-building-4-line"></i> New York (HQ)
+          </button>
+          <button class="office-tab-btn" onclick="switchOffice('ldn', this)" style="padding: 0.6rem 1.25rem; border-radius: 30px; font-size: 0.9rem; font-weight: 600; cursor: pointer; border: 1px solid var(--border-color); background: var(--surface); color: var(--text-color); transition: all 0.3s ease;">
+            <i class="ri-building-2-line"></i> London
+          </button>
+          <button class="office-tab-btn" onclick="switchOffice('gva', this)" style="padding: 0.6rem 1.25rem; border-radius: 30px; font-size: 0.9rem; font-weight: 600; cursor: pointer; border: 1px solid var(--border-color); background: var(--surface); color: var(--text-color); transition: all 0.3s ease;">
+            <i class="ri-government-line"></i> Geneva
+          </button>
+          <button class="office-tab-btn" onclick="switchOffice('dxb', this)" style="padding: 0.6rem 1.25rem; border-radius: 30px; font-size: 0.9rem; font-weight: 600; cursor: pointer; border: 1px solid var(--border-color); background: var(--surface); color: var(--text-color); transition: all 0.3s ease;">
+            <i class="ri-building-line"></i> Dubai
+          </button>
+          <button class="office-tab-btn" onclick="switchOffice('sin', this)" style="padding: 0.6rem 1.25rem; border-radius: 30px; font-size: 0.9rem; font-weight: 600; cursor: pointer; border: 1px solid var(--border-color); background: var(--surface); color: var(--text-color); transition: all 0.3s ease;">
+            <i class="ri-community-line"></i> Singapore
+          </button>
+        </div>
+
+        <!-- Main Map Container & Details Grid -->
+        <div style="display: grid; grid-template-columns: 1.8fr 1fr; gap: 2rem; align-items: stretch; margin-block-end: 2rem;">
+          
+          <!-- Interactive Google Map Frame -->
+          <div style="position: relative; width: 100%; min-height: 420px; border-radius: var(--radius-global); overflow: hidden; border: 1px solid var(--border-color); box-shadow: var(--shadow-medium);">
+            <iframe id="global-map-iframe"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3021.782054619736!2d-73.9667798!3d40.7700201!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c258eb5b6b856b%3A0x6b820a4b71221b6!2s740%20Park%20Ave%2C%20New%20York%2C%20NY%2010021!5e0!3m2!1sen!2sus!4v1700000000000!5m2!1sen!2sus"
+              width="100%" height="100%" style="border:0; min-height: 420px; filter: grayscale(20%) contrast(1.1);" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+          </div>
+
+          <!-- Active Office Details Panel -->
+          <div id="office-info-card" style="background: var(--surface); padding: 2rem; border-radius: var(--radius-global); border: 1px solid var(--border-color); display: flex; flex-direction: column; justify-content: space-between; text-align: start;">
+            <div>
+              <span id="office-badge" style="color: var(--secondary); font-size: 0.8rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.12em;">Global Headquarters</span>
+              <h3 id="office-title" style="margin-block: 0.5rem 1rem;">New York Office</h3>
+              <p id="office-address" style="font-size: 0.95rem; line-height: 1.6; margin-block-end: 1.5rem; color: var(--text-color);">
+                740 Park Avenue, 18th Floor<br>New York, NY 10021, United States
+              </p>
+
+              <div style="display: flex; flex-direction: column; gap: 0.8rem; font-size: 0.95rem;">
+                <div style="display: flex; align-items: center; gap: 0.75rem;">
+                  <i class="ri-phone-line" style="color: var(--secondary); font-size: 1.2rem;"></i>
+                  <span id="office-phone"><strong>Phone:</strong> +1 (212) 555-8900</span>
+                </div>
+                <div style="display: flex; align-items: center; gap: 0.75rem;">
+                  <i class="ri-mail-line" style="color: var(--secondary); font-size: 1.2rem;"></i>
+                  <span id="office-email"><strong>Email:</strong> nyc@vanguardlaw.com</span>
+                </div>
+                <div style="display: flex; align-items: center; gap: 0.75rem;">
+                  <i class="ri-time-line" style="color: var(--secondary); font-size: 1.2rem;"></i>
+                  <span id="office-hours"><strong>Hours:</strong> Mon - Fri: 8:00 AM - 8:00 PM EST</span>
+                </div>
+              </div>
+            </div>
+
+            <div style="margin-block-start: 2rem; padding-block-start: 1rem; border-block-start: 1px solid var(--border-color);">
+              <a id="office-directions" href="https://maps.google.com/?q=740+Park+Ave+New+York+NY" target="_blank" rel="noopener" class="btn btn-outline" style="width: 100%; font-size: 0.85rem; padding: 0.6rem 1rem; text-align: center; display: block;">
+                <i class="ri-direction-line"></i> Get Directions
+              </a>
+            </div>
+          </div>
+
         </div>
       </div>
     </section>
 
     <!-- SECTION 3: DIRECT ATTORNEY CHANNELS -->
-    <section class="full-section gsap-reveal">
+    <section class="full-section gsap-reveal" style="padding-block: 4rem 3rem;">
       <div class="container">
         <h2>Direct Practice Hotlines</h2>
         <p class="section-subtext">Contact lead partners directly during market hours.</p>
@@ -211,32 +290,62 @@
     </section>
 
     <!-- SECTION 4: 24/7 EMERGENCY LITIGATION DESK -->
-    <section class="full-section" style="background-color: var(--primary); color: #fff;">
+    <section style="background-color: var(--primary); color: #fff; padding-block: 3rem; min-height: auto;">
       <div class="container" style="text-align: center;">
-        <h2 style="color: #fff;">Emergency Injunction & Trial Response</h2>
-        <p class="subtext" style="color: #94a3b8;">For immediate asset freezing orders, search warrants, or weekend trial motions.</p>
-        <div style="display: inline-block; padding: 1.5rem 3rem; border: 1px solid var(--secondary); border-radius: var(--radius-global); margin-block-end: 2rem;">
-          <span style="display: block; font-size: 0.85rem; color: var(--secondary); text-transform: uppercase; letter-spacing: 0.15em;">24/7 Emergency Hotline</span>
+        <h2 style="color: #fff; margin-block-end: 0.5rem;">Emergency Injunction & Trial Response</h2>
+        <p class="subtext" style="color: #94a3b8; margin-block-end: 1.5rem;">For immediate asset freezing orders, search warrants, or weekend trial motions.</p>
+        <div style="display: inline-block; padding: 1.25rem 2.5rem; border: 1px solid var(--secondary); border-radius: var(--radius-global); margin-block-end: 0;">
+          <span style="display: block; font-size: 0.85rem; color: var(--secondary); text-transform: uppercase; letter-spacing: 0.15em; margin-block-end: 0.25rem;">24/7 Emergency Hotline</span>
           <strong style="font-size: 2.2rem; font-family: var(--font-heading); color: #fff;">+1 (800) 555-VANGUARD</strong>
         </div>
       </div>
     </section>
 
-    <!-- SECTION 5: INTAKE FAQ -->
-    <section class="full-section section-bg-alt gsap-reveal">
+    <!-- SECTION 5: INTAKE FAQ (INTERACTIVE DROPDOWNS) -->
+    <section class="full-section section-bg-alt gsap-reveal" style="padding-block: 4rem 3rem;">
       <div class="container" style="max-width: 800px;">
         <h2>Pre-Engagement Intake FAQ</h2>
         <p class="section-subtext">What to expect during your initial consultation with senior counsel.</p>
 
-        <div style="display: flex; flex-direction: column; gap: 1.5rem; text-align: start;">
-          <div style="background: var(--surface); padding: 1.5rem 2rem; border-radius: var(--radius-global); border: 1px solid var(--border-color);">
-            <h4 style="color: var(--secondary); margin-block-end: 0.5rem; text-align: start;">Is the initial consultation covered under Attorney-Client Privilege?</h4>
-            <p style="font-size: 0.95rem;">Yes, under applicable professional conduct rules, all preliminary communications remain strictly confidential regardless of whether an engagement agreement is subsequently executed.</p>
+        <div class="faq-accordion-list">
+          <div class="faq-accordion-item active">
+            <div class="faq-accordion-header">
+              <h4>Is the initial consultation covered under Attorney-Client Privilege?</h4>
+              <i class="ri-chevron-down-line faq-icon"></i>
+            </div>
+            <div class="faq-accordion-content">
+              <p>Yes, under applicable professional conduct rules, all preliminary communications remain strictly confidential regardless of whether an engagement agreement is subsequently executed.</p>
+            </div>
           </div>
 
-          <div style="background: var(--surface); padding: 1.5rem 2rem; border-radius: var(--radius-global); border: 1px solid var(--border-color);">
-            <h4 style="color: var(--secondary); margin-block-end: 0.5rem; text-align: start;">How quickly can conflict checks be cleared?</h4>
-            <p style="font-size: 0.95rem;">Our automated compliance software performs worldwide conflict checks across all office jurisdictions within 45 minutes of intake submission.</p>
+          <div class="faq-accordion-item">
+            <div class="faq-accordion-header">
+              <h4>How quickly can conflict checks be cleared?</h4>
+              <i class="ri-chevron-down-line faq-icon"></i>
+            </div>
+            <div class="faq-accordion-content">
+              <p>Our automated compliance software performs worldwide conflict checks across all office jurisdictions within 45 minutes of intake submission.</p>
+            </div>
+          </div>
+
+          <div class="faq-accordion-item">
+            <div class="faq-accordion-header">
+              <h4>What documentation should I prepare before our briefing?</h4>
+              <i class="ri-chevron-down-line faq-icon"></i>
+            </div>
+            <div class="faq-accordion-content">
+              <p>Please bring relevant contracts, dispute correspondence, regulatory notices, and corporate formation documents. All files can be uploaded securely via our client portal.</p>
+            </div>
+          </div>
+
+          <div class="faq-accordion-item">
+            <div class="faq-accordion-header">
+              <h4>Do you represent corporate entities in urgent injunction proceedings?</h4>
+              <i class="ri-chevron-down-line faq-icon"></i>
+            </div>
+            <div class="faq-accordion-content">
+              <p>Yes, our emergency litigation team is available 24/7 for immediate asset freezing orders, ex-parte injunctions, temporary restraining orders (TROs), and search warrants across global jurisdictions.</p>
+            </div>
           </div>
         </div>
       </div>
@@ -249,11 +358,17 @@
     <div class="container">
       <div class="footer-grid">
         <div class="footer-col">
-          <a href="index.html" class="brand-logo" style="color: #fff; margin-block-end: 1rem;">
+          <a href="index.html" class="brand-logo" style="margin-block-end: 1rem;">
             <i class="ri-scales-3-line"></i>
-            <span>Vanguard</span>
+            <span>Vanguard & Co</span>
           </a>
-          <p style="color: #94a3b8; font-size: 0.9rem;">Confidential counsel intake and trial advocacy.</p>
+          <p style="font-size: 0.9rem;">Confidential counsel intake and trial advocacy.</p>
+          <div class="footer-social-links">
+            <a href="https://linkedin.com" target="_blank" rel="noopener" class="social-btn" aria-label="LinkedIn"><i class="ri-linkedin-fill"></i></a>
+            <a href="https://twitter.com" target="_blank" rel="noopener" class="social-btn" aria-label="Twitter / X"><i class="ri-twitter-x-fill"></i></a>
+            <a href="https://facebook.com" target="_blank" rel="noopener" class="social-btn" aria-label="Facebook"><i class="ri-facebook-fill"></i></a>
+            <a href="https://instagram.com" target="_blank" rel="noopener" class="social-btn" aria-label="Instagram"><i class="ri-instagram-fill"></i></a>
+          </div>
         </div>
 
         <div class="footer-col">
@@ -272,7 +387,6 @@
           <div class="footer-links">
             <a href="blog.html">Legal Briefings</a>
             <a href="contact.html">Contact Us</a>
-            <a href="dashboard.html">Client Portal</a>
             <a href="login.html">Client Login</a>
             <a href="register.html">Register</a>
           </div>
@@ -280,14 +394,17 @@
 
         <div class="footer-col">
           <h4>New York Office</h4>
-          <p style="color: #94a3b8; font-size: 0.9rem; margin-block-end: 0.5rem;">740 Park Avenue</p>
-          <p style="color: #94a3b8; font-size: 0.9rem; margin-block-end: 0.5rem;">New York, NY 10021</p>
+          <p style="font-size: 0.9rem; margin-block-end: 0.5rem;">740 Park Avenue</p>
+          <p style="font-size: 0.9rem; margin-block-end: 0.5rem;">New York, NY 10021</p>
           <p style="color: var(--secondary); font-size: 0.9rem;"><i class="ri-phone-line"></i> +1 (212) 555-8900</p>
         </div>
       </div>
 
       <div class="footer-bottom">
         <p>&copy; 2026 Vanguard & Partners Legal Counsel LLC. All Rights Reserved.</p>
+        <button id="backToTopBtn" class="btn btn-outline back-to-top-btn" aria-label="Back to Top" style="padding: 0.5rem 1.2rem; font-size: 0.85rem;">
+          <i class="ri-arrow-up-line"></i> Back to Top
+        </button>
       </div>
     </div>
   </footer>
@@ -295,5 +412,87 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
   <script src="assets/js/main.js"></script>
+  <script>
+    const officesData = {
+      nyc: {
+        badge: "Global Headquarters",
+        title: "New York Office",
+        address: "740 Park Avenue, 18th Floor<br>New York, NY 10021, United States",
+        phone: "<strong>Phone:</strong> +1 (212) 555-8900",
+        email: "<strong>Email:</strong> nyc@vanguardlaw.com",
+        hours: "<strong>Hours:</strong> Mon - Fri: 8:00 AM - 8:00 PM EST",
+        directions: "https://maps.google.com/?q=740+Park+Ave+New+York+NY",
+        iframe: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3021.782054619736!2d-73.9667798!3d40.7700201!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c258eb5b6b856b%3A0x6b820a4b71221b6!2s740%20Park%20Ave%2C%20New%20York%2C%20NY%2010021!5e0!3m2!1sen!2sus!4v1700000000000!5m2!1sen!2sus"
+      },
+      ldn: {
+        badge: "European Chambers",
+        title: "London Office",
+        address: "1 Chancery Lane, Fleet Street<br>London WC2A 1QS, United Kingdom",
+        phone: "<strong>Phone:</strong> +44 (0) 20 7946 0914",
+        email: "<strong>Email:</strong> london@vanguardlaw.com",
+        hours: "<strong>Hours:</strong> Mon - Fri: 8:30 AM - 6:30 PM GMT",
+        directions: "https://maps.google.com/?q=1+Chancery+Lane+London",
+        iframe: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2482.907963503936!2d-0.1132646!3d51.5149363!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487604cb7fa09d0b%3A0x2f778d91c7a4ec38!2sChancery%20Ln%2C%20London%20WC2A%201QS%2C%20UK!5e0!3m2!1sen!2sus!4v1700000000000!5m2!1sen!2sus"
+      },
+      gva: {
+        badge: "Arbitration & Private Wealth",
+        title: "Geneva Office",
+        address: "Rue du Rhône 42<br>1204 Genève, Switzerland",
+        phone: "<strong>Phone:</strong> +41 22 819 9005",
+        email: "<strong>Email:</strong> geneva@vanguardlaw.com",
+        hours: "<strong>Hours:</strong> Mon - Fri: 8:00 AM - 6:00 PM CET",
+        directions: "https://maps.google.com/?q=Rue+du+Rhone+42+Geneva",
+        iframe: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2761.472718290382!2d6.1492102!3d46.2009893!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x478c652f1e63a15f%3A0x86c2d1b82143093b!2sRue%20du%20Rh%C3%B4ne%2042%2C%201204%20Gen%C3%A8ve%2C%20Switzerland!5e0!3m2!1sen!2sus!4v1700000000000!5m2!1sen!2sus"
+      },
+      dxb: {
+        badge: "Middle East & International Hub",
+        title: "Dubai (DIFC) Office",
+        address: "DIFC Gate Precinct, Building 4<br>Dubai, United Arab Emirates",
+        phone: "<strong>Phone:</strong> +971 4 362 7000",
+        email: "<strong>Email:</strong> dubai@vanguardlaw.com",
+        hours: "<strong>Hours:</strong> Mon - Fri: 9:00 AM - 6:00 PM GST",
+        directions: "https://maps.google.com/?q=DIFC+Gate+Precinct+Dubai",
+        iframe: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3609.789124508935!2d55.2796245!3d25.2106093!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f428d08595555%3A0x28972b2512f4581f!2sDubai%20International%20Financial%20Centre%20(DIFC)!5e0!3m2!1sen!2sus!4v1700000000000!5m2!1sen!2sus"
+      },
+      sin: {
+        badge: "Asia-Pacific Legal Desk",
+        title: "Singapore Office",
+        address: "Marina Bay Financial Centre, Tower 2<br>Singapore 018983",
+        phone: "<strong>Phone:</strong> +65 6535 2211",
+        email: "<strong>Email:</strong> singapore@vanguardlaw.com",
+        hours: "<strong>Hours:</strong> Mon - Fri: 8:30 AM - 6:00 PM SGT",
+        directions: "https://maps.google.com/?q=Marina+Bay+Financial+Centre+Singapore",
+        iframe: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.819385804595!2d103.8504289!3d1.2821389!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31da190e44383c27%3A0xbca12a8ffbc1cb24!2sMarina%20Bay%20Financial%20Centre!5e0!3m2!1sen!2sus!4v1700000000000!5m2!1sen!2sus"
+      }
+    };
+
+    function switchOffice(key, btn) {
+      const data = officesData[key];
+      if (!data) return;
+      
+      const mapIframe = document.getElementById('global-map-iframe');
+      if (mapIframe) mapIframe.src = data.iframe;
+      
+      document.getElementById('office-badge').innerText = data.badge;
+      document.getElementById('office-title').innerText = data.title;
+      document.getElementById('office-address').innerHTML = data.address;
+      document.getElementById('office-phone').innerHTML = data.phone;
+      document.getElementById('office-email').innerHTML = data.email;
+      document.getElementById('office-hours').innerHTML = data.hours;
+      document.getElementById('office-directions').href = data.directions;
+      
+      document.querySelectorAll('.office-tab-btn').forEach(b => {
+        b.style.background = 'var(--surface)';
+        b.style.color = 'var(--text-color)';
+        b.style.borderColor = 'var(--border-color)';
+        b.classList.remove('active');
+      });
+      
+      btn.style.background = 'var(--secondary)';
+      btn.style.color = '#0b1320';
+      btn.style.borderColor = 'var(--secondary)';
+      btn.classList.add('active');
+    }
+  </script>
 </body>
 </html>

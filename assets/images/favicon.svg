@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="100%" height="100%">
+  <rect width="512" height="512" rx="112" fill="#0b1320"/>
+  <rect x="16" y="16" width="480" height="480" rx="96" fill="none" stroke="url(#goldGradient)" stroke-width="12" opacity="0.5"/>
+  <defs>
+    <linearGradient id="goldGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f59e0b"/>
+      <stop offset="50%" stop-color="#fbbf24"/>
+      <stop offset="100%" stop-color="#d97706"/>
+    </linearGradient>
+  </defs>
+  <!-- Central Scales of Justice Emblem -->
+  <g transform="translate(256, 246) scale(1.15)" fill="none" stroke="url(#goldGradient)" stroke-width="20" stroke-linecap="round" stroke-linejoin="round">
+    <!-- Center Pillar & Base -->
+    <line x1="0" y1="-120" x2="0" y2="110" />
+    <line x1="-60" y1="110" x2="60" y2="110" stroke-width="24"/>
+    <!-- Top Ornament -->
+    <polygon points="0,-142 -14,-120 0,-98 14,-120" fill="url(#goldGradient)" stroke="none"/>
+    <!-- Main Beam -->
+    <line x1="-125" y1="-70" x2="125" y2="-70" />
+    <circle cx="0" cy="-70" r="12" fill="url(#goldGradient)" stroke="none"/>
+    <circle cx="-125" cy="-70" r="8" fill="url(#goldGradient)" stroke="none"/>
+    <circle cx="125" cy="-70" r="8" fill="url(#goldGradient)" stroke="none"/>
+    <!-- Left Scale Strings & Pan -->
+    <line x1="-125" y1="-70" x2="-160" y2="20" stroke-width="10"/>
+    <line x1="-125" y1="-70" x2="-90" y2="20" stroke-width="10"/>
+    <path d="M -175,20 Q -125,55 -75,20 Z" fill="url(#goldGradient)" stroke="none"/>
+    <!-- Right Scale Strings & Pan -->
+    <line x1="125" y1="-70" x2="90" y2="20" stroke-width="10"/>
+    <line x1="125" y1="-70" x2="160" y2="20" stroke-width="10"/>
+    <path d="M 75,20 Q 125,55 175,20 Z" fill="url(#goldGradient)" stroke="none"/>
+  </g>
+</svg>

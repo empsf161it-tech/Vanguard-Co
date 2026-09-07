@@ -8,7 +8,7 @@ A high-performance, responsive luxury web application designed for law firms, le
 
 - **Luxury Refined Design System**: Palette based on Obsidian Navy (`#0B1320`), Champagne Gold (`#C59B27`), and Ivory Silk (`#FCFBFA`).
 - **Strict Typography Architecture**: `Cormorant Garamond` (serif headings constrained to max weight 580) paired with `Plus Jakarta Sans` (body text).
-- **13 Complete HTML Pages**:
+- **12 Complete HTML Pages**:
   - `index.html`: Home 1 (Hero entrance reveal, practice cards, firm story, trial statistics, testimonials, executive CTA)
   - `home2.html`: Home 2 (Editorial split hero, interactive Corporate Risk Assessment tool, partner spotlight matrix)
   - `about.html`: About Firm (Founding ethos, managing partners, landmark litigation timeline, global presence)
@@ -16,10 +16,9 @@ A high-performance, responsive luxury web application designed for law firms, le
   - `pricing.html`: Fee & Retainer Tiers (Transparent retainers, interactive fee estimator, SLA terms, pro-bono policy, pricing FAQ)
   - `blog.html`: Legal Briefings (Featured case analysis, category grid, quarterly precedents, intelligence newsletter)
   - `blog-single.html`: Comprehensive Article View (Deep-dive analysis, author bio card, commentary intake)
-  - `contact.html`: Confidential Counsel Intake (Validated intake form, global office map placeholder, direct hotlines, 24/7 desk)
-  - `login.html`: Client Portal Login (Centered card layout, email/password validation, Google & Apple auth options, strictly no header theme toggle)
-  - `register.html`: Portal Registration (Centered layout, name/email/password match validation, T&C checkbox, Google & Apple auth)
-  - `dashboard.html`: Client & Counsel Portal (Overview KPI metrics, active litigation dockets, document vault, retainers, counsel chat)
+  - `contact.html`: Confidential Counsel Intake (Validated intake form, interactive global office map, direct hotlines, 24/7 desk)
+  - `login.html`: Client Login (Centered card layout, email/password validation, Google & Apple auth options)
+  - `register.html`: Registration (Centered layout, name/email/password match validation, T&C checkbox, Google & Apple auth)
   - `404.html`: Custom Legal Error Page ("Verdict: Page Not Found")
   - `coming-soon.html`: Pre-launch Arbitration Portal (Live countdown timer, priority access request form)
 - **RTL & LTR Direction Toggle**: Built-in ⇄ arrow switcher with logical CSS properties and `assets/css/rtl.css`.
@@ -43,7 +42,6 @@ A high-performance, responsive luxury web application designed for law firms, le
 ├── contact.html
 ├── login.html
 ├── register.html
-├── dashboard.html
 ├── 404.html
 ├── coming-soon.html
 ├── assets/
@@ -51,8 +49,7 @@ A high-performance, responsive luxury web application designed for law firms, le
 │   │   ├── style.css
 │   │   └── rtl.css
 │   └── js/
-│       ├── main.js
-│       └── dashboard.js
+│       └── main.js
 └── README.md
 ```
 
