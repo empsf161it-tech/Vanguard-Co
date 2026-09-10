@@ -142,6 +142,33 @@
               </div>
             </div>
           </div>
+
+          <!-- Quick Access Social Media Buttons -->
+          <div style="margin-block-start: 2.2rem; padding-block-start: 1.5rem; border-block-start: 1px solid var(--border-subtle);">
+            <strong style="display: block; font-size: 0.95rem; margin-block-end: 0.85rem; color: var(--text-main);">
+              <i class="ri-share-line" style="color: var(--secondary); margin-inline-end: 0.3rem;"></i> Connect via Official Social Channels
+            </strong>
+            <div style="display: flex; gap: 0.6rem; flex-wrap: wrap;">
+              <a href="https://linkedin.com" target="_blank" rel="noopener" class="btn btn-outline" style="padding: 0.45rem 0.9rem; font-size: 0.85rem; border-radius: 20px;" aria-label="LinkedIn">
+                <i class="ri-linkedin-fill" style="color: #0a66c2;"></i> LinkedIn
+              </a>
+              <a href="https://twitter.com" target="_blank" rel="noopener" class="btn btn-outline" style="padding: 0.45rem 0.9rem; font-size: 0.85rem; border-radius: 20px;" aria-label="Twitter / X">
+                <i class="ri-twitter-x-fill"></i> Twitter / X
+              </a>
+              <a href="https://instagram.com" target="_blank" rel="noopener" class="btn btn-outline" style="padding: 0.45rem 0.9rem; font-size: 0.85rem; border-radius: 20px;" aria-label="Instagram">
+                <i class="ri-instagram-fill" style="color: #e4405f;"></i> Instagram
+              </a>
+              <a href="https://facebook.com" target="_blank" rel="noopener" class="btn btn-outline" style="padding: 0.45rem 0.9rem; font-size: 0.85rem; border-radius: 20px;" aria-label="Facebook">
+                <i class="ri-facebook-fill" style="color: #1877f2;"></i> Facebook
+              </a>
+              <a href="https://youtube.com" target="_blank" rel="noopener" class="btn btn-outline" style="padding: 0.45rem 0.9rem; font-size: 0.85rem; border-radius: 20px;" aria-label="YouTube">
+                <i class="ri-youtube-fill" style="color: #ff0000;"></i> YouTube
+              </a>
+              <a href="https://wa.me/12125558900" target="_blank" rel="noopener" class="btn btn-outline" style="padding: 0.45rem 0.9rem; font-size: 0.85rem; border-radius: 20px;" aria-label="WhatsApp">
+                <i class="ri-whatsapp-line" style="color: #25d366;"></i> WhatsApp
+              </a>
+            </div>
+          </div>
         </div>
 
         <!-- Intake Form Container -->
@@ -193,26 +220,26 @@
         <p class="section-subtext">Direct physical presence across major legal and financial centers worldwide.</p>
 
         <!-- Office Selection Navigation Tabs -->
-        <div class="office-tabs" style="display: flex; gap: 0.75rem; justify-content: center; flex-wrap: wrap; margin-block-end: 2rem;">
-          <button class="office-tab-btn active" onclick="switchOffice('nyc', this)" style="padding: 0.6rem 1.25rem; border-radius: 30px; font-size: 0.9rem; font-weight: 600; cursor: pointer; border: 1px solid var(--secondary); background: var(--secondary); color: #0b1320; transition: all 0.3s ease;">
+        <div class="office-tabs">
+          <button class="office-tab-btn active" onclick="switchOffice('nyc', this)">
             <i class="ri-building-4-line"></i> New York (HQ)
           </button>
-          <button class="office-tab-btn" onclick="switchOffice('ldn', this)" style="padding: 0.6rem 1.25rem; border-radius: 30px; font-size: 0.9rem; font-weight: 600; cursor: pointer; border: 1px solid var(--border-color); background: var(--surface); color: var(--text-color); transition: all 0.3s ease;">
+          <button class="office-tab-btn" onclick="switchOffice('ldn', this)">
             <i class="ri-building-2-line"></i> London
           </button>
-          <button class="office-tab-btn" onclick="switchOffice('gva', this)" style="padding: 0.6rem 1.25rem; border-radius: 30px; font-size: 0.9rem; font-weight: 600; cursor: pointer; border: 1px solid var(--border-color); background: var(--surface); color: var(--text-color); transition: all 0.3s ease;">
+          <button class="office-tab-btn" onclick="switchOffice('gva', this)">
             <i class="ri-government-line"></i> Geneva
           </button>
-          <button class="office-tab-btn" onclick="switchOffice('dxb', this)" style="padding: 0.6rem 1.25rem; border-radius: 30px; font-size: 0.9rem; font-weight: 600; cursor: pointer; border: 1px solid var(--border-color); background: var(--surface); color: var(--text-color); transition: all 0.3s ease;">
+          <button class="office-tab-btn" onclick="switchOffice('dxb', this)">
             <i class="ri-building-line"></i> Dubai
           </button>
-          <button class="office-tab-btn" onclick="switchOffice('sin', this)" style="padding: 0.6rem 1.25rem; border-radius: 30px; font-size: 0.9rem; font-weight: 600; cursor: pointer; border: 1px solid var(--border-color); background: var(--surface); color: var(--text-color); transition: all 0.3s ease;">
+          <button class="office-tab-btn" onclick="switchOffice('sin', this)">
             <i class="ri-community-line"></i> Singapore
           </button>
         </div>
 
         <!-- Main Map Container & Details Grid -->
-        <div style="display: grid; grid-template-columns: 1.8fr 1fr; gap: 2rem; align-items: stretch; margin-block-end: 2rem;">
+        <div class="map-details-grid">
           
           <!-- Interactive Google Map Frame -->
           <div style="position: relative; width: 100%; min-height: 420px; border-radius: var(--radius-global); overflow: hidden; border: 1px solid var(--border-color); box-shadow: var(--shadow-medium);">
@@ -227,7 +254,7 @@
             <div>
               <span id="office-badge" style="color: var(--secondary); font-size: 0.8rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.12em;">Global Headquarters</span>
               <h3 id="office-title" style="margin-block: 0.5rem 1rem;">New York Office</h3>
-              <p id="office-address" style="font-size: 0.95rem; line-height: 1.6; margin-block-end: 1.5rem; color: var(--text-color);">
+              <p id="office-address" style="font-size: 0.95rem; line-height: 1.6; margin-block-end: 1.5rem; color: var(--text-main);">
                 740 Park Avenue, 18th Floor<br>New York, NY 10021, United States
               </p>
 
@@ -287,6 +314,82 @@
           </div>
         </div>
       </div>
+    <!-- SECTION 3.5: OFFICIAL MEDIA & SOCIAL NETWORK HUB -->
+    <section class="full-section section-bg-alt gsap-reveal" style="padding-block: 4.5rem 3.5rem;">
+      <div class="container">
+        <h2>Official Social Media Networks</h2>
+        <p class="section-subtext">Follow Vanguard & Partners across global networks for key court filings, legal analysis, and corporate briefings.</p>
+
+        <div class="card-grid" style="grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));">
+          
+          <div class="card" style="text-align: center; padding: 2.2rem 1.8rem;">
+            <div class="card-icon" style="background: rgba(10, 102, 194, 0.1); border-color: rgba(10, 102, 194, 0.3);">
+              <i class="ri-linkedin-fill" style="color: #0a66c2;"></i>
+            </div>
+            <h3 class="card-title">LinkedIn</h3>
+            <p class="card-desc">Executive legal briefings, landmark victory announcements, and partner counsel insights.</p>
+            <a href="https://linkedin.com" target="_blank" rel="noopener" class="btn btn-outline" style="width: 100%;">
+              Connect on LinkedIn <i class="ri-arrow-right-line"></i>
+            </a>
+          </div>
+
+          <div class="card" style="text-align: center; padding: 2.2rem 1.8rem;">
+            <div class="card-icon" style="background: rgba(255, 255, 255, 0.08); border-color: var(--border-color);">
+              <i class="ri-twitter-x-fill" style="color: var(--text-main);"></i>
+            </div>
+            <h3 class="card-title">Twitter / X</h3>
+            <p class="card-desc">Real-time trial developments, appellate commentary, and global regulatory updates.</p>
+            <a href="https://twitter.com" target="_blank" rel="noopener" class="btn btn-outline" style="width: 100%;">
+              Follow on X <i class="ri-arrow-right-line"></i>
+            </a>
+          </div>
+
+          <div class="card" style="text-align: center; padding: 2.2rem 1.8rem;">
+            <div class="card-icon" style="background: rgba(228, 64, 95, 0.1); border-color: rgba(228, 64, 95, 0.3);">
+              <i class="ri-instagram-fill" style="color: #e4405f;"></i>
+            </div>
+            <h3 class="card-title">Instagram</h3>
+            <p class="card-desc">Chambers culture, global office locations, and public interest pro-bono highlights.</p>
+            <a href="https://instagram.com" target="_blank" rel="noopener" class="btn btn-outline" style="width: 100%;">
+              Follow Instagram <i class="ri-arrow-right-line"></i>
+            </a>
+          </div>
+
+          <div class="card" style="text-align: center; padding: 2.2rem 1.8rem;">
+            <div class="card-icon" style="background: rgba(255, 0, 0, 0.1); border-color: rgba(255, 0, 0, 0.3);">
+              <i class="ri-youtube-fill" style="color: #ff0000;"></i>
+            </div>
+            <h3 class="card-title">YouTube Channel</h3>
+            <p class="card-desc">Keynote trial arguments, legal webinars, and international arbitration symposiums.</p>
+            <a href="https://youtube.com" target="_blank" rel="noopener" class="btn btn-outline" style="width: 100%;">
+              Subscribe Channel <i class="ri-arrow-right-line"></i>
+            </a>
+          </div>
+
+          <div class="card" style="text-align: center; padding: 2.2rem 1.8rem;">
+            <div class="card-icon" style="background: rgba(37, 211, 102, 0.1); border-color: rgba(37, 211, 102, 0.3);">
+              <i class="ri-whatsapp-line" style="color: #25d366;"></i>
+            </div>
+            <h3 class="card-title">WhatsApp Concierge</h3>
+            <p class="card-desc">Direct 24/7 encrypted messaging desk for retained corporate clients and emergency counsel.</p>
+            <a href="https://wa.me/12125558900" target="_blank" rel="noopener" class="btn btn-primary" style="width: 100%;">
+              Chat on WhatsApp <i class="ri-whatsapp-line"></i>
+            </a>
+          </div>
+
+          <div class="card" style="text-align: center; padding: 2.2rem 1.8rem;">
+            <div class="card-icon" style="background: rgba(24, 119, 242, 0.1); border-color: rgba(24, 119, 242, 0.3);">
+              <i class="ri-facebook-fill" style="color: #1877f2;"></i>
+            </div>
+            <h3 class="card-title">Facebook Page</h3>
+            <p class="card-desc">Community involvement, law scholarship press releases, and alumni announcements.</p>
+            <a href="https://facebook.com" target="_blank" rel="noopener" class="btn btn-outline" style="width: 100%;">
+              Join Community <i class="ri-arrow-right-line"></i>
+            </a>
+          </div>
+
+        </div>
+      </div>
     </section>
 
     <!-- SECTION 4: 24/7 EMERGENCY LITIGATION DESK -->
@@ -311,7 +414,7 @@
           <div class="faq-accordion-item active">
             <div class="faq-accordion-header">
               <h4>Is the initial consultation covered under Attorney-Client Privilege?</h4>
-              <i class="ri-chevron-down-line faq-icon"></i>
+              <i class="ri-arrow-down-s-line faq-icon"></i>
             </div>
             <div class="faq-accordion-content">
               <p>Yes, under applicable professional conduct rules, all preliminary communications remain strictly confidential regardless of whether an engagement agreement is subsequently executed.</p>
@@ -321,7 +424,7 @@
           <div class="faq-accordion-item">
             <div class="faq-accordion-header">
               <h4>How quickly can conflict checks be cleared?</h4>
-              <i class="ri-chevron-down-line faq-icon"></i>
+              <i class="ri-arrow-down-s-line faq-icon"></i>
             </div>
             <div class="faq-accordion-content">
               <p>Our automated compliance software performs worldwide conflict checks across all office jurisdictions within 45 minutes of intake submission.</p>
@@ -331,7 +434,7 @@
           <div class="faq-accordion-item">
             <div class="faq-accordion-header">
               <h4>What documentation should I prepare before our briefing?</h4>
-              <i class="ri-chevron-down-line faq-icon"></i>
+              <i class="ri-arrow-down-s-line faq-icon"></i>
             </div>
             <div class="faq-accordion-content">
               <p>Please bring relevant contracts, dispute correspondence, regulatory notices, and corporate formation documents. All files can be uploaded securely via our client portal.</p>
@@ -341,7 +444,7 @@
           <div class="faq-accordion-item">
             <div class="faq-accordion-header">
               <h4>Do you represent corporate entities in urgent injunction proceedings?</h4>
-              <i class="ri-chevron-down-line faq-icon"></i>
+              <i class="ri-arrow-down-s-line faq-icon"></i>
             </div>
             <div class="faq-accordion-content">
               <p>Yes, our emergency litigation team is available 24/7 for immediate asset freezing orders, ex-parte injunctions, temporary restraining orders (TROs), and search warrants across global jurisdictions.</p>
@@ -368,6 +471,8 @@
             <a href="https://twitter.com" target="_blank" rel="noopener" class="social-btn" aria-label="Twitter / X"><i class="ri-twitter-x-fill"></i></a>
             <a href="https://facebook.com" target="_blank" rel="noopener" class="social-btn" aria-label="Facebook"><i class="ri-facebook-fill"></i></a>
             <a href="https://instagram.com" target="_blank" rel="noopener" class="social-btn" aria-label="Instagram"><i class="ri-instagram-fill"></i></a>
+            <a href="https://youtube.com" target="_blank" rel="noopener" class="social-btn" aria-label="YouTube"><i class="ri-youtube-fill"></i></a>
+            <a href="https://wa.me/12125558900" target="_blank" rel="noopener" class="social-btn" aria-label="WhatsApp"><i class="ri-whatsapp-line"></i></a>
           </div>
         </div>
 
@@ -482,16 +587,14 @@
       document.getElementById('office-directions').href = data.directions;
       
       document.querySelectorAll('.office-tab-btn').forEach(b => {
-        b.style.background = 'var(--surface)';
-        b.style.color = 'var(--text-color)';
-        b.style.borderColor = 'var(--border-color)';
         b.classList.remove('active');
+        b.removeAttribute('style');
       });
       
-      btn.style.background = 'var(--secondary)';
-      btn.style.color = '#0b1320';
-      btn.style.borderColor = 'var(--secondary)';
-      btn.classList.add('active');
+      if (btn) {
+        btn.classList.add('active');
+        btn.removeAttribute('style');
+      }
     }
   </script>
 </body>
