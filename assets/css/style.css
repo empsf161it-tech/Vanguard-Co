@@ -1222,10 +1222,46 @@ select.form-control {
   .kpi-card,
   .card-grid,
   .dash-pane,
-  .form-group,
   .drawer-header {
     text-align: center !important;
     align-items: center !important;
+  }
+
+  /* Form Group & Form Elements Left Alignment on Mobile & Tablet */
+  .form-group {
+    text-align: start !important;
+    align-items: stretch !important;
+    width: 100% !important;
+  }
+
+  .form-group .form-label,
+  .form-group label,
+  .form-label {
+    text-align: start !important;
+    display: block !important;
+    width: 100% !important;
+    margin-inline: 0 !important;
+  }
+
+  .form-control,
+  select.form-control,
+  textarea.form-control,
+  .password-input-wrapper {
+    text-align: start !important;
+    width: 100% !important;
+  }
+
+  .error-message {
+    text-align: start !important;
+  }
+
+  /* Form Grid Row Alignment on Mobile & Tablet */
+  form [style*="grid-template-columns"],
+  .auth-card form [style*="grid-template-columns"],
+  .form-grid-row {
+    justify-items: stretch !important;
+    text-align: start !important;
+    gap: 0.75rem !important;
   }
 
   /* Centering lists & list items (e.g. checkmarks + text in services/pricing) */
